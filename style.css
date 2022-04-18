@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Corinthia:wght@400;700&family=Karla&family=Kaushan+Script&family=Sen&display=swap');
+body{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Bebas Neue, sans-serif;
+    background-color: whitesmoke;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.loading{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+/* title */
+h1{
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+/* image container */
+.image-container{
+    margin: 10px 30%;
+    display: none;
+}
+.image-container img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media(max-width:600px){
+    h1{
+    font-size: 10px;
+    
+    text-align:center;
+    }
+    .image-container{
+        margin: 10px;
+    }
+}
